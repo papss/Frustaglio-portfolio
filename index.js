@@ -10,6 +10,7 @@ $(document).ready(function() {
   });
 
   $('.modal').on('click', function() {
+    $('iframe').attr('src', $('iframe').attr('src')); 
     $('.modal').fadeOut('slow');
   });
 
