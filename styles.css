@@ -50,14 +50,42 @@
 
   /* TABLETS: */
 
+  @media (max-width:800px) {
+
+    /* LOGO: */
+    .logo {
+      top: 57px;
+      left: 5%;
+    }
+
+    .logo > span {
+      font-size: 2rem;
+    }
+
+    /* NAV: */
+    nav {
+      right: 5%;
+    }
+
+    nav > ul {
+      transform: translateY(66%);
+    }
+
+    nav > ul > li {
+      margin: 0px 10px;
+      font-size: 1.25rem;
+    }
+  }
+
   /* MOBILE: */
 
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
 
     .site-header {
       height: 100px;
     }
 
+    /* LOGO: */
     .logo {
       display: block;
       width: 100%;
@@ -70,6 +98,7 @@
       font-size: 2rem;
     }
 
+    /* NAV MENU: */
     nav {
       display: block;
       width: 100%;
@@ -129,9 +158,20 @@
   }
 
   /* TABLETS: */
+
+  @media (max-width:800px) {
+    .article-header {
+      padding: 50px 5% 20px 5%;
+    }
+
+    .content {
+      padding: 0px 5%;
+    }
+  }
+
   /* MOBILE: */
 
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
     main {
       top: 100px;
     }
@@ -171,11 +211,17 @@
       line-height: 1.6;
       margin-top: 20px;
       text-align: justify;
+      font-size: 1rem;
     }
   /* TABLETS: */
+
+  @media (max-width:800px) {
+
+  }
+
   /* MOBILES: */
 
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
 
     .modal {
       top: 0px;
@@ -197,13 +243,14 @@
     .modal-content > span {
       padding: 0px 20px;
       margin-bottom: 10px;
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
 
     .modal-content > p {
       padding: 0px 20px;
       margin-top: 10px;
       line-height: 1.4;
+      font-size: 0.95rem;
     }
   }
 
@@ -215,4 +262,20 @@
     background: lightgrey;
   }
   /* TABLET: */
+
+  @media (max-width:800px) {
+
+  }
+
   /* MOBILE: */
+
+  @media (max-width: 600px) {
+
+  }
+
+/* ===== PREVENT SCROLLING: ========== */
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden; 
+}
