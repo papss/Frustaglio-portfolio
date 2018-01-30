@@ -7,37 +7,52 @@
   .splash {
     height: 855px;
     width: 100%;
+    background: #1E1E1D;
   }
 
   .splash-contain {
     height: 100%;
-    width: 55%;
+    width: 45%;
     margin: auto;
     text-align: center;
-    border: 1px solid black;
   }
 
   .name {
-    padding: 20px;
+    padding: 20px 0 10px 0;
 
-    font-family: Shrikhand, cursive;
+    font-family: Helvetica, sans-serif;
     font-size: 64px;
+    color: #293233;
   }
 
   .sub-header {
-    font-family: Shrikhand, cursive;
-    font-size: 42px; 
+    margin-bottom: 75px;
+
+    font-family: Helvetica, sans-serif;
+    font-size: 42px;
+    color: #E8C57F;
+  }
+
+  .splash-image {
+    height: 500px;
+    width: 100%;
+
+    background: url("hero.jpeg");
+    background-position: center;
+    background-size: contain;
+    border: 1px solid #E8C57F;
   }
 
 /* DIVIDER: */
   .divider {
     height: 100px;
     width: 100%;
-    background: darkslategrey;
+    background: #293233;
   }
 
 /* PORTFOLIO: */
   .portfolio {
     height: 855px;
     width: 100%;
+    background: #1E1E1D;
   }
