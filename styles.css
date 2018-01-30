@@ -2,280 +2,42 @@
   * { padding: 0; margin: 0; }
   body { font-family: sans-serif; }
 
-/* ===== HEADER STYLES ============ */
-/* DESKTOP: */
+/* SPLASH: */
 
-  .site-header {
-    position: fixed;
-    top: 0px;
-    left: 0px;
+  .splash {
+    height: 855px;
     width: 100%;
-    height: 150px;
-    background: lightgrey;
-    z-index: 10;
   }
 
-  /* SITE LOGO */
-  .logo {
-    display: inline-block;
-    position: absolute;
-    top: 50px;
-    left: 10%;
+  .splash-contain {
+    height: 100%;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
   }
 
-  .logo > span {
-    height: 50px;
-    font-size: 3rem;
+  .name {
+    padding: 20px;
+
+    font-family: Shrikhand, cursive;
+    font-size: 64px;
   }
 
-  /* SITE NAVIGATION */
-  nav {
-    display: inline-block;
-    position: absolute;
-    height: 50px;
-    top: 50px;
-    right: 10%;
+  .sub-header {
+    font-family: Shrikhand, cursive;
+    font-size: 42px; 
   }
 
-  nav > ul {
-    transform: translateY(50%);
-    list-style: none;
-  }
-
-  nav > ul > li {
-    display: inline-block;
-    margin: 0px 20px;
-    font-size: 1.5rem;
-  }
-
-  /* TABLETS: */
-
-  @media (max-width:800px) {
-
-    /* LOGO: */
-    .logo {
-      top: 57px;
-      left: 5%;
-    }
-
-    .logo > span {
-      font-size: 2rem;
-    }
-
-    /* NAV: */
-    nav {
-      right: 5%;
-    }
-
-    nav > ul {
-      transform: translateY(66%);
-    }
-
-    nav > ul > li {
-      margin: 0px 10px;
-      font-size: 1.25rem;
-    }
-  }
-
-  /* MOBILE: */
-
-  @media (max-width: 600px) {
-
-    .site-header {
-      height: 100px;
-    }
-
-    /* LOGO: */
-    .logo {
-      display: block;
-      width: 100%;
-      top: 10px;
-      left: 0px;
-      text-align: center;
-    }
-
-    .logo > span {
-      font-size: 2rem;
-    }
-
-    /* NAV MENU: */
-    nav {
-      display: block;
-      width: 100%;
-      right: 0%;
-      text-align: center;
-    }
-
-    nav > ul {
-      width: 100%;
-    }
-
-    nav > ul > li {
-      font-size: 1rem;
-      margin: 0px 10px;
-    }
-  }
-
-/* ===== MAIN STYLES ============= */
-  /* DESKTOP: */
-
-  main {
-    position: absolute;
-    top: 150px;
-    height: 1200px;
-    width: 100%;
-    background: white;
-  }
-
-  article {
-    height: 70%;
-    width: 100%;
-    background: grey;
-  }
-
-  article:nth-child(even) {
-    background: white;
-  }
-
-  .article-header {
-    padding: 50px 10% 20px 10%;
-    font-size: 3rem;
-  }
-
-  .content {
-    padding: 0px 10%
-  }
-
-  .content > h1 {
-    line-height: 1.6;
-    font-size: 1rem;
-    font-weight: normal;
-  }
-
-  .subheading {
-    font-size: 2rem;
-    padding-bottom: 20px;
-  }
-
-  /* TABLETS: */
-
-  @media (max-width:800px) {
-    .article-header {
-      padding: 50px 5% 20px 5%;
-    }
-
-    .content {
-      padding: 0px 5%;
-    }
-  }
-
-  /* MOBILE: */
-
-  @media (max-width: 600px) {
-    main {
-      top: 100px;
-    }
-  }
-
-/* ===== MODAL STYLES: ============= */
-  /* DESKTOP: */
-    .modal {
-      display: none;
-      position: fixed;
-      top: 150px;
-      height: 100%;
-      width: 100%;
-      background: rgba(150, 0, 100, 0.8);
-    }
-
-    .modal-content {
-      height: 100%;
-      width: 640px;
-      margin: auto;
-      padding: 50px;
-      /*background: pink;*/
-    }
-
-    .modal-content > iframe {
-      display: block;
-      margin: auto;
-      margin-bottom: 50px;
-    }
-
-    .modal-content > span {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .modal-content > p {
-      line-height: 1.6;
-      margin-top: 20px;
-      text-align: justify;
-      font-size: 1rem;
-    }
-  /* TABLETS: */
-
-  @media (max-width:800px) {
-
-  }
-
-  /* MOBILES: */
-
-  @media (max-width: 600px) {
-
-    .modal {
-      top: 0px;
-      z-index: 11;
-      background: rgba(150, 0, 100, 1);
-    }
-
-    .modal-content {
-      padding: 0px;
-      width: 100%;
-    }
-
-    .modal-content > iframe {
-      width: 100%;
-      height: 35%;
-      margin-bottom: 30px;
-    }
-
-    .modal-content > span {
-      padding: 0px 20px;
-      margin-bottom: 10px;
-      font-size: 1.75rem;
-    }
-
-    .modal-content > p {
-      padding: 0px 20px;
-      margin-top: 10px;
-      line-height: 1.4;
-      font-size: 0.95rem;
-    }
-  }
-
-/* ===== FOOTER STYLES: ============ */
-  /* DESKTOP: */
-  footer {
-    width: 100%;
+/* DIVIDER: */
+  .divider {
     height: 100px;
-    background: lightgrey;
-  }
-  /* TABLET: */
-
-  @media (max-width:800px) {
-
+    width: 100%;
+    background: darkslategrey;
   }
 
-  /* MOBILE: */
-
-  @media (max-width: 600px) {
-
+/* PORTFOLIO: */
+  .portfolio {
+    height: 855px;
+    width: 100%;
   }
-
-/* ===== PREVENT SCROLLING: ========== */
-
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden; 
-}
