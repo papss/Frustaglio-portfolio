@@ -5,7 +5,10 @@
 /* SPLASH: */
 
   .splash {
-    height: 855px;
+    position: fixed;
+    top: 0px;
+
+    height: 100%;
     width: 100%;
     background: #1E1E1D;
   }
@@ -43,16 +46,59 @@
     border: 1px solid #E8C57F;
   }
 
-/* DIVIDER: */
-  .divider {
-    height: 100px;
+/* PORTFOLIO: */
+  .portfolio {
+    z-index: 10;
+    position: absolute;
+    top: 860px;
+
+    height: 100%;
+    width: 100%;
+    background: #1E1E1D;
+  }
+
+  .port-divider {
+    z-index: 10;
+    /* height: 100px; */
     width: 100%;
     background: #293233;
   }
 
-/* PORTFOLIO: */
-  .portfolio {
-    height: 855px;
+  .port-heading {
+    box-sizing: border-box;
+    z-index: 50;
+    width: 50%;
+    padding: 20px;
+
+    font-family: Helvetica, sans-serif;
+    font-size: 42px;
+  }
+
+/* CONTACT: */
+  .contact {
+    z-index: 20;
+    position: absolute;
+    top: 1720px;
+
+    height: 100%;
     width: 100%;
-    background: #1E1E1D;
+    background: #1e1e1d;
+  }
+
+  .con-divider {
+    width: 100%;
+    background: #293233;
+  }
+
+  .con-heading {
+    box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    width: 50%;
+    padding: 20px;
+    background: teal;
+
+    text-align: right;
+    font-family: Helvetica, sans-serif;
+    font-size: 42px;
   }
