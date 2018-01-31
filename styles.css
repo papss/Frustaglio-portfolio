@@ -50,16 +50,22 @@
   .portfolio {
     z-index: 10;
     position: absolute;
-    top: 860px;
+    top: 91%;
 
     height: 100%;
+    width: 100%;
+  }
+
+  .port-contain {
+    position: sticky;
+    top: 0px;
+    height: 950px;
     width: 100%;
     background: #1E1E1D;
   }
 
   .port-divider {
     z-index: 10;
-    /* height: 100px; */
     width: 100%;
     background: #293233;
   }
@@ -82,12 +88,18 @@
 
     height: 100%;
     width: 100%;
-    background: #1e1e1d;
+  }
+
+  .con-contain {
+    /* position: sticky;
+    top: 0px; */
+    height: 950px;
+    width: 100%;
   }
 
   .con-divider {
     width: 100%;
-    background: #293233;
+    background: red;
   }
 
   .con-heading {
@@ -96,9 +108,27 @@
     left: 50%;
     width: 50%;
     padding: 20px;
-    background: teal;
 
     text-align: right;
     font-family: Helvetica, sans-serif;
     font-size: 42px;
+  }
+
+/* TO DO(?): */
+  .streamline {
+    display: flex;
+    height: 90%;
+    width: 100%;
+  }
+
+  section {
+    width: 50%;
+  }
+
+  .right {
+    background: #253031
+  }
+
+  .todo {
+    background: teal;
   }
