@@ -1,134 +1,84 @@
 /* PADDING/MARGINS RESET: */
-  * { padding: 0; margin: 0; }
-  body { font-family: sans-serif; }
+* { padding: 0; margin: 0; }
+body { font-family: sans-serif; }
 
-/* SPLASH: */
+/* Structure: */
 
-  .splash {
-    position: fixed;
-    top: 0px;
+.left {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 22.5%;
 
-    height: 100%;
-    width: 100%;
-    background: #1E1E1D;
-  }
+  background: grey;
+}
 
-  .splash-contain {
-    height: 100%;
-    width: 45%;
-    margin: auto;
-    text-align: center;
-  }
+.right {
+  position: fixed;
+  top: 0px;
+  left: 22.5%;
+  height: 100%;
+  width: 80%;
 
-  .name {
-    padding: 20px 0 10px 0;
+  background: darkslategrey;
+}
 
-    font-family: Helvetica, sans-serif;
-    font-size: 64px;
-    color: #293233;
-  }
+/* Audioboard (left side): */
 
-  .sub-header {
-    margin-bottom: 75px;
+.nameplate {
+  height: 300px;
+  width: 80%;
+  margin: 35px auto;
 
-    font-family: Helvetica, sans-serif;
-    font-size: 42px;
-    color: #E8C57F;
-  }
+  background: white;
+}
 
-  .splash-image {
-    height: 500px;
-    width: 100%;
+.soundboard {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  background: white;
+}
 
-    background: url("hero.jpeg");
-    background-position: center;
-    background-size: contain;
-    border: 1px solid #E8C57F;
-  }
+.controls {
+  height: 50px;
+  width: 100%;
+  background: pink;
+}
 
-/* PORTFOLIO: */
-  .portfolio {
-    z-index: 10;
-    position: absolute;
-    top: 91%;
+.slider {
+  box-sizing: border-box;
+  height: 450px;
+  width: 33.3%;
+  background: lightgrey;
+  /* border: 1px solid black; */
+}
 
-    height: 100%;
-    width: 100%;
-  }
+/* slider components: */
 
-  .port-contain {
-    position: sticky;
-    top: 0px;
-    height: 950px;
-    width: 100%;
-    background: #1E1E1D;
-  }
+.cntrl-label {
+  height: 50px;
+  text-align: center;
+  background: orange;
+}
 
-  .port-divider {
-    z-index: 10;
-    width: 100%;
-    background: #293233;
-  }
+.slot {
+  height: 300px;
+  width: 15%;
+  margin: auto;
+  background: black;
+}
 
-  .port-heading {
-    box-sizing: border-box;
-    z-index: 50;
-    width: 50%;
-    padding: 20px;
+.light {
+  height: 50px;
+  width: 100%;
+  background: lightgreen; 
+}
 
-    font-family: Helvetica, sans-serif;
-    font-size: 42px;
-  }
 
-/* CONTACT: */
-  .contact {
-    z-index: 20;
-    position: absolute;
-    top: 1720px;
-
-    height: 100%;
-    width: 100%;
-  }
-
-  .con-contain {
-    /* position: sticky;
-    top: 0px; */
-    height: 950px;
-    width: 100%;
-  }
-
-  .con-divider {
-    width: 100%;
-    background: red;
-  }
-
-  .con-heading {
-    box-sizing: border-box;
-    position: relative;
-    left: 50%;
-    width: 50%;
-    padding: 20px;
-
-    text-align: right;
-    font-family: Helvetica, sans-serif;
-    font-size: 42px;
-  }
-
-/* TO DO(?): */
-  .streamline {
-    display: flex;
-    height: 90%;
-    width: 100%;
-  }
-
-  section {
-    width: 50%;
-  }
-
-  .right {
-    background: #253031
-  }
-
-  .todo {
-    background: teal;
-  }
+div.slider:nth-child(2n+1) {
+  background: white;
+}
