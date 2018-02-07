@@ -61,6 +61,7 @@ body { font-family: sans-serif; }
 
 .cntrl-label {
   height: 50px;
+  margin-bottom: 25px;
   text-align: center;
   background: orange;
 }
@@ -69,13 +70,26 @@ body { font-family: sans-serif; }
   height: 300px;
   width: 15%;
   margin: auto;
-  background: black;
+  background: #2d2d2d;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.knob {
+  position: relative;
+  top: 5px;
+  left: -17px;
+
+  width: 50px;
+  height: 75px;
+  background: pink;
 }
 
 .light {
   height: 50px;
   width: 100%;
-  background: lightgreen; 
+  margin-top: 25px; 
+  background: lightgreen;
 }
 
 
