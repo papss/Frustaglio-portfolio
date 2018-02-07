@@ -77,7 +77,6 @@ body { font-family: sans-serif; }
 
 .knob {
   position: relative;
-  top: 5px;
   left: -17px;
 
   width: 50px;
@@ -85,12 +84,21 @@ body { font-family: sans-serif; }
   background: pink;
 }
 
+.knob-top {
+  top: 5px;
+}
+
+.knob-bottom {
+  top: 220px; 
+}
+
 .light {
   height: 50px;
   width: 100%;
-  margin-top: 25px; 
+  margin-top: 25px;
   background: lightgreen;
 }
+
 
 
 div.slider:nth-child(2n+1) {
