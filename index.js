@@ -17,7 +17,7 @@ $(document).ready(function() {
     }
   });
 
-  // SLIDER GOES UP: 
+  // SLIDER GOES UP:
   jQuery.fn.extend({
     sliderUp: function () {
 
@@ -30,11 +30,28 @@ $(document).ready(function() {
     }
   });
 
+  // CLICK LISTENER FOR ANIMATING KNOBS:
   $(".knob").click(function() {
     $(aboutKnob).sliderDown();
     $(portKnob).sliderDown();
     $(contKnob).sliderDown();
     $(this).sliderUp();
   })
+
+
+  // CHANGE THE VISIBLE SECTION:
+  $(portKnob).click(function() {
+
+    if ( $(".portfolio-section").hasClass("off-screen") ) {
+
+      var visible = $(".on-screen");
+
+      $(visible).removeClass("on-screen");
+      $(visible).addClass("off-screen");
+      $(".portfolio-section").removeClass("off-screen");
+      $(".portfolio-section").addClass("on-screen");
+
+    }
+  });
 
 });

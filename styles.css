@@ -89,7 +89,7 @@ body { font-family: sans-serif; }
 }
 
 .knob-bottom {
-  top: 220px; 
+  top: 220px;
 }
 
 .light {
@@ -99,8 +99,33 @@ body { font-family: sans-serif; }
   background: lightgreen;
 }
 
+/* RIGHT SIDE ============================ */
+/* ======================================= */
 
+section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 
-div.slider:nth-child(2n+1) {
-  background: white;
+.on-screen {
+  z-index: 10; 
+  left: 0px;
+}
+
+.off-screen {
+  z-index: 1;
+  left: 100%;
+}
+
+.about-section {
+  background: teal;
+}
+
+.portfolio-section {
+  background: #d2d2d2;
+}
+
+.contact-section {
+  .background: #2d2d2d;
 }
