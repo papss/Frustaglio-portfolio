@@ -54,4 +54,34 @@ $(document).ready(function() {
     }
   });
 
+  // non-DRY code:
+
+  $(contKnob).click(function() {
+
+    if ( $(".contact-section").hasClass("off-screen") ) {
+
+      var visible = $(".on-screen");
+
+      $(visible).removeClass("on-screen");
+      $(visible).addClass("off-screen");
+      $(".contact-section").removeClass("off-screen");
+      $(".contact-section").addClass("on-screen");
+
+    }
+  });
+
+  $(aboutKnob).click(function() {
+
+    if ( $(".about-section").hasClass("off-screen") ) {
+
+      var visible = $(".on-screen");
+
+      $(visible).removeClass("on-screen");
+      $(visible).addClass("off-screen");
+      $(".about-section").removeClass("off-screen");
+      $(".about-section").addClass("on-screen");
+
+    }
+  });
+
 });
