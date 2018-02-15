@@ -30,6 +30,9 @@ $(document).ready(function() {
     }
   });
 
+
+
+
   // CLICK LISTENER FOR ANIMATING KNOBS:
   $(".knob").click(function() {
     $(aboutKnob).sliderDown();
